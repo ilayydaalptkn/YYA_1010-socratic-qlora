@@ -1,0 +1,29 @@
+# local envs / caches
+qlora_env/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+
+# secrets
+.env
+.env.*
+*.token
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+
+# training runtime junk (keep final adapter folder)
+wandb/
+runs/
+**/checkpoint-*/
+**/optimizer.pt
+**/rng_state.pth
+**/scheduler.pt
+**/trainer_state.json
+**/training_args.bin
